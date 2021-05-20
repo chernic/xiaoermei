@@ -1,16 +1,184 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<style type="text/css">
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+ 
+body {
+    margin: 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ 
+td,th {
+    padding: 0;
+}
+ 
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+ 
+.pure-table caption {
+    color: #000;
+    font: italic 85%/1 arial,sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+ 
+.pure-table td,.pure-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em;
+}
+ 
+.pure-table thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+ 
+.pure-table td {
+    background-color: transparent;
+}
+
+#friend {
+    width: 80px; 
+    padding: 0; 
+    margin: 0; 
+    text-align: center;
+    vertical-align: middle;
+}
+</style>
 </head>
 
 <body>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/电动沙发.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/电动医疗床.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/电踏车.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/高空作业平台.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/光伏跟踪器.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/海外升降桌.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/汽车电动尾门.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/全地形车.png') }}"></video>
-    <video width="145" height="145" poster="{{ url_for('static', path='img/升降油烟机.png') }}"></video>
+    <table border="1">
+      <tr>
+        <th>项目</th>
+        <th>图片</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr><td>海外升降桌</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/海外升降桌.png') }}"></video></td>
+        <td id="friend"><a>Steelcase</a></td>
+        <td id="friend"><a>Haworth</a></td>
+        <td id="friend"><a>Herman</a></td>
+        <td id="friend"><a>Miller</a></td>
+        <td id="friend"><a>HNI</a></td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/海外升降桌.png') }}"></video></td>
+        <td id="friend">线性驱动</td>
+        <td id="friend"><a>力纳克</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603583">捷昌驱动(SH:603583)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH605288">凯迪股份(SH:605288)</a></td>
+      </tr>
+      <tr><td>电动沙发</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/电动沙发.png') }}"></video></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603816">顾家家居(SH:603816)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH600978">宜华生活(SH:600978)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/01999">敏华控股(HK:01999)</a></td>
+        <td></td>
+        <td></td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/电动沙发.png') }}"></video></td>
+        <td id="friend">线性驱动</td>
+        <td id="friend"><a>力纳克</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603583">捷昌驱动(SH:603583)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH605288">凯迪股份(SH:605288)</a></td>
+      </tr>
+      <tr><td>升降油烟机</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/升降油烟机.png') }}"></video></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/升降油烟机.png') }}"></video></td>
+        <td id="friend">线性驱动</td>
+        <td id="friend"><a>力纳克</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603583">捷昌驱动(SH:603583)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH605288">凯迪股份(SH:605288)</a></td>
+      </tr>
+      <tr><td>光伏跟踪器</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/光伏跟踪器.png') }}"></video></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/光伏跟踪器.png') }}"></video></td>
+        <td id="friend">线性驱动</td>
+        <td id="friend"><a>力纳克</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603583">捷昌驱动(SH:603583)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH605288">凯迪股份(SH:605288)</a></td>
+      </tr>
+      <tr><td>汽车电动尾门</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/汽车电动尾门.png') }}"></video></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/汽车电动尾门.png') }}"></video></td>
+        <td id="friend">线性驱动</td>
+        <td id="friend"><a>力纳克</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603583">捷昌驱动(SH:603583)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH605288">凯迪股份(SH:605288)</a></td>
+      </tr>
+      <tr><td>电动医疗床</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/电动医疗床.png') }}"></video></td>
+        <td id="friend"><a>舒达席梦思</a></td>
+        <td id="friend"><a>泰普尔丝涟</a></td>
+        <td id="friend"><a>好市多</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603610">麒盛科技(SH:603610)</a></td>
+        <td></td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/电动医疗床.png') }}"></video></td>
+        <td id="friend">线性驱动</td>
+        <td id="friend"><a>力纳克</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603583">捷昌驱动(SH:603583)</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH605288">凯迪股份(SH:605288)</a></td>
+      </tr>
+      <tr><td>电踏车</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/电踏车.png') }}"></video></td>
+        <td id="friend"><a>Prophete</a></td>
+        <td id="friend"><a>迪卡侬</a></td>
+        <td id="friend"><a>Arcade Cycles</a></td>
+        <td id="friend"><a>Eurosport DHS</a></td>
+        <td id="friend"><a>Cycleurope</a></td>
+        <td id="friend">中置电机</td>
+        <td id="friend"><a >博世电机</a></td>
+        <td id="friend"><a >禧玛诺</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603489">八方股份(SH:603489)</a></td>
+        <td id="friend"><a >博泽</a></td> 
+      </tr>
+      <tr><td>高空作业平台</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/高空作业平台.png') }}"></video></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603338">浙江鼎力(SH:603338)</a></td>
+      </tr>
+      <tr><td>全地形车</td>
+        <td><video width="125" height="70" poster="{{ url_for('static', path='img/全地形车.png') }}"></video></td>
+        <td id="friend"><a >北极星工业</a></td>
+        <td id="friend"><a href="https://xueqiu.com/S/SH603129">春风动力(SH:603129)</a></td>
+      </tr>
+    </table>
 </body></html>
